@@ -12,6 +12,7 @@
     "@fontsource/merriweather": "^5.0.8",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
+    "axios": "^1.6.7",
     "flowbite": "^2.3.0",
     "gatsby": "^5.13.3",
     "gatsby-plugin-feed": "^5.13.1",

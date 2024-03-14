@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
 import Testimonial from "../components/testimonial"
+import Contact from "../components/contact"
 
 export const query = graphql`
   query ($id: String!) {
@@ -39,6 +40,7 @@ const Services = ({ data }) => {
         <div className="max-w-7xl mx-auto px-10">{parse(html)}</div>
       </div>
       <Testimonial />
+      <Contact />
     </Layout>
   )
 }
