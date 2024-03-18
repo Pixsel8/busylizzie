@@ -36,7 +36,7 @@ const Services = ({ data }) => {
         heroImage={frontmatter.heroImage.childImageSharp.gatsbyImageData}
         description={frontmatter.description}
       />
-      <div className="bg-white my-20 xl:mt-0 lg:px-8">
+      <div className="bg-white my-20 lg:my-32 xl:mt-0 lg:px-8">
         <div className="max-w-7xl mx-auto px-10">{parse(html)}</div>
       </div>
       <Testimonial />

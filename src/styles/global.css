@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +14,12 @@
   h2 {
     @apply text-3xl md:text-4xl lg:text-5xl tracking-tight text-gray-900 my-6;
   }
-  p {
+  h3 {
+    @apply text-xl md:text-2xl lg:text-3xl tracking-tight text-gray-900 my-6;
+  }
+  p,
+  a {
+    font-family: "Gotu", sans-serif;
     @apply text-lg leading-8 text-gray-900;
   }
 }

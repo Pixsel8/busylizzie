@@ -1,6 +1,5 @@
 import React from "react"
 import Button from "./button"
-import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Hero = ({ title, heroImage, description }) => {

@@ -10,7 +10,7 @@ const company = [
   { name: "Home help", href: "/home-help" },
   { name: "Transportation", href: "/transportation" },
   { name: "Nutrition", href: "/nutrition" },
-  { name: "Social enrichment", href: "social-enrichment" },
+  { name: "Social enrichment", href: "/social-enrichment" },
 ]
 
 function classNames(...classes) {

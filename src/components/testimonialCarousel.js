@@ -1,26 +1,29 @@
+import { motion } from "framer-motion"
 import React, { useState, useEffect } from "react"
+
+import arrowLeft from "../images/svg/arrow-left.svg"
+import arrowRight from "../images/svg/arrow-right.svg"
+import speechLeft from "../images/svg/speech-left.svg"
+import speechRight from "../images/svg/speech-right.svg"
 
 const testimonials = [
   {
     id: 1,
-    name: "Jane Doe",
-    position: "CEO of Company",
+    name: "Susan Pow",
     testimonial:
-      "This product revolutionized our workflow and boosted our productivity. Highly recommended!",
+      "I was lucky enough to arrange for Chloe to care for an elderly friend. She was totally empathetic and gained his trust very quickly. Chloe and her team were wonderful, caring, reliable and  kind. They were flexible and looked after every aspect of his care increasing the hours and visits as it became necessary. \n \n Chloe and her team transformed my friend's life and I am very grateful.",
   },
   {
     id: 2,
-    name: "John Smith",
-    position: "CTO of Another Company",
+    name: "Susan Low",
     testimonial:
-      "A game-changer in its field. The support team was incredibly helpful and responsive.",
+      "I was lucky enough to arrange for Chloe to care for an elderly friend. She was totally empathetic and gained his trust very quickly. Chloe and her team were wonderful, caring, reliable and  kind. They were flexible and looked after every aspect of his care increasing the hours and visits as it became necessary. \n \n  Chloe and her team transformed my friend's life and I am very grateful.",
   },
   {
     id: 3,
-    name: "Alex Johnson",
-    position: "Product Manager at Startup",
+    name: "Susan Wow",
     testimonial:
-      "Simple, efficient, and powerful. It's exactly what we needed to streamline our processes.",
+      "I was lucky enough to arrange for Chloe to care for an elderly friend. She was totally empathetic and gained his trust very quickly. Chloe and her team were wonderful, caring, reliable and  kind. They were flexible and looked after every aspect of his care increasing the hours and visits as it became necessary. \n \n  Chloe and her team transformed my friend's life and I am very grateful.",
   },
 ]
 
@@ -36,27 +39,77 @@ const TestimonialCarousel = () => {
   }, [])
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      <div className="bg-white shadow-xl rounded-lg p-8">
-        <p>"{testimonials[currentIndex].testimonial}"</p>
-        <p className="mt-4 font-semibold">
-          {testimonials[currentIndex].name},{" "}
-          <span className="font-normal">
-            {testimonials[currentIndex].position}
-          </span>
-        </p>
+    <div className="">
+      <div className="px-4 py-4 flex items-center">
+        <div className="hidden md:block">
+          <div
+            aria-label="Go to previous testimonial"
+            onClick={() =>
+              setCurrentIndex(currentIndex =>
+                currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1
+              )
+            }
+          >
+            <img src={arrowLeft} className="w-10 h-10" />
+          </div>
+        </div>
+        <div className="p-8 relative lg:mx-20">
+          <img src={speechLeft} className="w-12 h-10 absolute top-0 left-0" />
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }} // Duration of the transition
+          >
+            <p className="text-white p-5">
+              "
+              {testimonials[currentIndex].testimonial
+                .split("\n")
+                .map((line, index, array) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    {index !== array.length - 1 && <br />}
+                  </React.Fragment>
+                ))}
+              "
+            </p>
+            <p className="mt-4 font-semibold text-white p-5">
+              {testimonials[currentIndex].name}{" "}
+              <span className="font-normal"></span>
+            </p>
+          </motion.div>
+          <img
+            src={speechRight}
+            className="w-12 h-10 absolute bottom-10 right-0"
+          />
+        </div>
+        <div className="hidden md:block">
+          <div
+            aria-label="Go to next testimonial"
+            onClick={() =>
+              setCurrentIndex(
+                currentIndex => (currentIndex + 1) % testimonials.length
+              )
+            }
+          >
+            <img src={arrowRight} className="w-10 h-10" />
+          </div>
+        </div>
       </div>
-      <div className="flex justify-center space-x-2 mt-4">
-        {testimonials.map((_, index) => (
-          <button
-            key={index}
-            className={`w-3 h-3 ${
-              index === currentIndex ? "bg-blue-500" : "bg-gray-300"
-            } rounded-full`}
-            aria-label={`Go to slide ${index + 1}`}
-            onClick={() => setCurrentIndex(index)}
-          ></button>
-        ))}
+      <div className="md:hidden">
+        <div className="flex justify-center space-x-2 mt-4">
+          {testimonials.map((_, index) => (
+            <button
+              key={index}
+              className={`w-5 h-5 ${
+                index === currentIndex ? "bg-white" : "bg-pink-700"
+              } rounded-full`}
+              aria-label={`Go to slide ${index + 1}`}
+              onClick={() => setCurrentIndex(index)}
+            ></button>
+          ))}
+        </div>
       </div>
     </div>
   )
