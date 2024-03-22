@@ -33,8 +33,8 @@ const ContactForm = () => {
 
   return (
     <div className="col-md-8 mt-5">
-      <form action="#" className="px-6" onSubmit={handleOnSubmit}>
-        <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+      <form action="#" className="lg:px-6" onSubmit={handleOnSubmit}>
+        <div className="mx-auto w-full">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6">
             <div className="sm:col-span-2">
               <label
@@ -91,7 +91,7 @@ const ContactForm = () => {
           <div className="mt-8 flex justify-end">
             <button
               type="submit"
-              className="rounded-md bg-gray-900 px-3.5 py-2.5 text-center text-sm text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="transition ease-in-out hover:scale-105 hover:bg-pink-700 rounded-md bg-gray-900 px-3.5 py-2.5 text-center text-sm text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               send
             </button>

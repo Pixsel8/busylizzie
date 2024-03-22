@@ -1,6 +1,5 @@
 import React from "react"
 import ContactForm from "./form"
-import { StaticImage } from "gatsby-plugin-image"
 
 import callIcon from "../images/svg/call.svg"
 import messageIcon from "../images/svg/message.svg"

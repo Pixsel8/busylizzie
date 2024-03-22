@@ -6,6 +6,8 @@ import Hero from "../components/hero"
 import Button from "../components/button"
 import Testimonial from "../components/testimonial"
 import Contact from "../components/contact"
+import ServicesButtons from "../components/servicesButtons"
+import EventButtons from "../components/eventButtons"
 
 const heroData = {
   title: "Your welfare is our concern",
@@ -57,7 +59,9 @@ const Index = () => {
           <Button link="/contact">contact us today</Button>
         </div>
       </div>
+      <ServicesButtons />
       <Testimonial />
+      <EventButtons />
       <Contact />
     </Layout>
   )

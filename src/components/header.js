@@ -27,13 +27,13 @@ export default function Example() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Busy Lizzie Home Care</span>
             <StaticImage
               src="../images/busylizzie-logo.png"
               alt="Busy Lizzie logo"
             />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -87,7 +87,7 @@ export default function Example() {
           <Link to="/blog" className="text-sm  leading-6 text-gray-900">
             Local events
           </Link>
-          <Link href="#" className="text-sm  leading-6 text-gray-900">
+          <Link to="/contact" className="text-sm  leading-6 text-gray-900">
             Contact
           </Link>
         </Popover.Group>
@@ -101,13 +101,13 @@ export default function Example() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Busy Lizzie Home Care</span>
               <StaticImage
                 src="../images/busylizzie-logo.png"
                 alt="Busy Lizzie logo"
               />
-            </a>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-900"
@@ -168,7 +168,7 @@ export default function Example() {
                   Local events
                 </Link>
                 <Link
-                  href="/contact"
+                  to="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-sm  leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact

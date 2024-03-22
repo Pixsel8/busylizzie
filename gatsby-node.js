@@ -23,13 +23,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     {
       allMarkdownRemark(
         filter: { frontmatter: { category: { eq: "blog" } } }
-        sort: { fields: [frontmatter___date], order: ASC }
+        sort: { fields: [frontmatter___date], order: DESC }
         limit: 1000
       ) {
         nodes {
           id
-          fields {
-            slug
+          frontmatter {
+            path
           }
         }
       }
@@ -56,7 +56,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
 
       createPage({
-        path: post.fields.slug,
+        path: post.frontmatter.path,
         component: blogPost,
         context: {
           id: post.id,
