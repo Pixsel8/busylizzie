@@ -10,13 +10,14 @@ import ServicesButtons from "../components/servicesButtons"
 import EventButtons from "../components/eventButtons"
 
 const heroData = {
+  pageTitle: "Home",
   title: "Your welfare is our concern",
   description:
     "Busy Lizzie provides professional home care services tailored to your needs.",
 }
 
 const Index = () => {
-  const { title, description } = heroData
+  const { title, description, pageTitle } = heroData
   const { allFile } = useStaticQuery(graphql`
     query {
       allFile(filter: { name: { eq: "home-hero" } }) {
@@ -34,7 +35,7 @@ const Index = () => {
 
   return (
     <Layout>
-      <Seo />
+      <Seo title={pageTitle} description={description} />
       <Hero title={title} heroImage={heroImageData} description={description} />
       <div className="bg-white my-20 lg:my-32 xl:mt-0 lg:px-8">
         <div className="max-w-4xl mx-auto px-10 text-center">

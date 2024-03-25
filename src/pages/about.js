@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import AboutBio from "../components/aboutBio"
 import Testimonial from "../components/testimonial"
 import Contact from "../components/contact"
+import Seo from "../components/seo"
 
 const heroData = {
   title: "About us",
@@ -29,6 +30,7 @@ const About = () => {
   const heroImageData = allFile.nodes[0].childImageSharp.gatsbyImageData
   return (
     <Layout>
+      <Seo title={title} description={description} />
       <Hero title={title} heroImage={heroImageData} description={description} />
       <div className="bg-white my-20 lg:my-32 xl:mt-0 lg:px-8">
         <div className="max-w-7xl mx-auto px-10">

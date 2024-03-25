@@ -5,6 +5,7 @@ description: "Participating in elderly rap battles not only adds a vibrant and e
 category: "blog"
 heroImage: "./rap-battle.png"
 path: "/senior-rap-battle"
+location: "Timsbury"
 ---
 
 Engaging in skydiving in their golden years not only provides the elderly with an exhilarating and unforgettable experience but also fosters a sense of empowerment, pushing them beyond their comfort zones and promoting physical and mental well-being.

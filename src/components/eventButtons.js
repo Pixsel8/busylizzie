@@ -37,7 +37,7 @@ const EventButtons = () => {
               <ServiceButton
                 key={path}
                 title={title}
-                path={path}
+                path="/blog"
                 image={image}
               />
             )

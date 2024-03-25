@@ -5,6 +5,8 @@ description: "Engaging in skydiving in their golden years not only provides the 
 category: "blog"
 heroImage: "./skydiving.png"
 path: "/elderly-sky-diving"
+
+location: "Timsbury"
 ---
 
 Engaging in skydiving in their golden years not only provides the elderly with an exhilarating and unforgettable experience but also fosters a sense of empowerment, pushing them beyond their comfort zones and promoting physical and mental well-being.

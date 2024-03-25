@@ -1,11 +1,12 @@
 import * as React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
+import Contact from "../components/contact"
 
 const heroData = {
   title: "Local events",
@@ -36,9 +37,9 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Hero title={title} heroImage={heroImageData} description={description} />
-      <ol style={{ listStyle: `none` }}>
+      <ol style={{ listStyle: `none` }} className="max-w-7xl mx-auto my-24">
         {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
+          const eventTitle = post.frontmatter.title || post.fields.slug
           const image = getImage(
             post.frontmatter.heroImage.childImageSharp.gatsbyImageData
           )
@@ -46,36 +47,37 @@ const BlogIndex = ({ data, location }) => {
           return (
             <li key={post.fields.slug}>
               <article
-                className="post-list-item"
+                className="post-list-item flex flex-col md:flex-row my-24"
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                  <GatsbyImage
-                    image={image}
-                    alt={post.frontmatter.title}
-                    className="w-64 md:w-96 md:h-96 rounded-lg"
-                  />
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
+                <GatsbyImage
+                  image={image}
+                  alt={post.frontmatter.title}
+                  className="md:basis-1/2 rounded-lg mx-10 "
+                />
+                <div className="basis-3/4 flex flex-col mx-10 md:ml-5 md:mr-10">
+                  <header>
+                    <h2>{eventTitle}</h2>
+                    <h3>
+                      {post.frontmatter.date}, {post.frontmatter.location}
+                    </h3>
+                  </header>
+                  <section>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: post.frontmatter.description || post.excerpt,
+                      }}
+                      itemProp="description"
+                    />
+                  </section>
+                </div>
               </article>
             </li>
           )
         })}
       </ol>
+      <Contact />
     </Layout>
   )
 }
@@ -106,6 +108,8 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
+          title
+          location
           date(formatString: "MMMM DD, YYYY")
           description
           heroImage {

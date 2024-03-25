@@ -23,16 +23,16 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="flex flex-col justify-center md:order-2">
+        <div className="flex flex-col justify-center items-center md:order-2">
           {social.map(item => (
-            <a key={item.name} href={item.href}>
+            <a key={item.name} href={item.href} target="_blank">
               <span className="sr-only">{item.name}</span>
-              <img src={fbLogo} aria-hidden="true" />
+              <img src={fbLogo} aria-hidden="true" alt="facebook logo" />
             </a>
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <div className="flex lg:flex-1">
+          <div className="flex lg:flex-1 justify-center">
             <StaticImage
               src="../images/busylizzie-logo-white.png"
               alt="Busy Lizzie logo"
@@ -51,7 +51,7 @@ const Footer = () => {
           </a>
         </p>
         <div className="space-x-5 text-xs mt-5 text-white"></div>
-        <p className="text-xs mt-5 text-white ml-0">
+        <p className="text-center text-xs mt-5 text-white ml-0">
           website built and maintained by{" "}
           <a className="text-white text-xs" href="https://pixsel8.com/">
             Pixsel8
