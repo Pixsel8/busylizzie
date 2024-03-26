@@ -15,7 +15,7 @@ module.exports = {
       summary: `#`,
     },
     description: `Busy Lizzie provides professional home care services tailored to your needs.`,
-    siteUrl: `https://busylizziecare.com/`,
+    siteUrl: `https://busylizziecare.co.uk/`,
     social: {
       twitter: `#`,
     },
@@ -116,7 +116,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Busy Lizzie Home Care Feed",
           },
         ],
       },

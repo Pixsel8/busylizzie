@@ -10,3 +10,15 @@
 exports.onRenderBody = ({ setHtmlAttributes }) => {
   setHtmlAttributes({ lang: `en` })
 }
+
+import React from "react"
+
+export const onRenderBody = ({ setHeadComponents }) => {
+  setHeadComponents([
+    <script
+      key="tidio-script"
+      src="//code.tidio.co/dzx123ect3vgkjcsplwoljsr2cvatsue.js"
+      async
+    ></script>,
+  ])
+}
