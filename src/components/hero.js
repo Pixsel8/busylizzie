@@ -8,7 +8,7 @@ const Hero = ({ title, heroImage, description }) => {
     <div className="relative isolate overflow-hidden bg-white max-w-7xl mx-auto">
       <div className="max-w-7xl min-h-[calc(100vh-96px)]  xl:min-h-[calc(100vh-122px)] flex flex-col-reverse items-center justify-center xl:flex-row xl:justify-between p-10">
         <div className="w-auto lg:mx-0 flex md:justify-center">
-          <div className="md:w-4/5 lg:w-4/5 xl:w-full xl:flex xl:flex-col xl:justify-center p-4">
+          <div className="md:w-4/5 lg:w-4/5 xl:w-full xl:flex xl:flex-col xl:justify-center p-4 lg:px-0">
             <h1 className="max-w-2xl mt-10 xl:mt-0">{title}</h1>
             <div className="mt-6 max-w-xl">
               <p>{description}</p>
