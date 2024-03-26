@@ -15,7 +15,7 @@ module.exports = {
       summary: `#`,
     },
     description: `Busy Lizzie provides professional home care services tailored to your needs.`,
-    siteUrl: `http://busylizziehomecare.co.uk/`,
+    siteUrl: `https://busylizziecare.com/`,
     social: {
       twitter: `#`,
     },
@@ -133,6 +133,14 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaults: {
+          placeholder: "none",
+        },
       },
     },
 
