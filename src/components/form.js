@@ -91,7 +91,7 @@ const ContactForm = () => {
           <div className="mt-8 flex justify-end">
             <button
               type="submit"
-              className="transition ease-in-out hover:scale-105 hover:bg-pink-700 rounded-md bg-gray-900 px-3.5 py-2.5 text-center text-sm text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="transition ease-in-out hover:scale-105 hover:bg-pink-700 rounded-3xl w-3/5 md:w-48 bg-gray-900 px-3.5 py-2.5 text-center text-sm text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 "
             >
               send
             </button>

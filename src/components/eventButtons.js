@@ -26,7 +26,7 @@ const EventButtons = () => {
   `)
 
   return (
-    <div className="flex flex-col items-center my-40">
+    <div className="flex flex-col items-center my-20">
       <h2>Local Events</h2>
       <div className="flex justify-center mt-10">
         <div className="flex flex-col flex-wrap lg:flex-row justify-evenly max-w-7xl">

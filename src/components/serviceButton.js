@@ -14,7 +14,7 @@ const ServiceButton = ({ title, path, image }) => {
     >
       <Link to={path}>
         <div className="absolute bottom-0 z-10">
-          <div className="flex items-center justify-center absolute bg-pink-700 w-64 md:w-96 h-20 rounded-lg opacity-80 group-hover:opacity-100 group-hover:bg-gray-900"></div>
+          <div className="flex items-center justify-center absolute bg-gray-900 w-64 md:w-96 h-20 rounded-lg"></div>
           <div className="flex items-center justify-center w-64 md:w-96 h-20 rounded">
             <h3 className="text-white z-10">{title}</h3>
           </div>

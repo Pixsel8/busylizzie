@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Button = ({ children, link, style }) => {
-  if (style === "light") {
+const Button = ({ children, link, format }) => {
+  if (format === "light") {
     return (
       <Link
         to={link}

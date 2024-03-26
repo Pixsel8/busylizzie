@@ -22,8 +22,8 @@ const social = [
 const Footer = () => {
   return (
     <footer className="bg-gray-900">
-      <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="flex flex-col justify-center items-center md:order-2">
+      <div className="mx-auto max-w-7xl px-6 py-12 flex flex-col-reverse md:flex-row md:items-center md:justify-between lg:px-8">
+        <div className="flex flex-col justify-center items-center md:order-2 mt-10 md:mt-0">
           {social.map(item => (
             <a key={item.name} href={item.href} target="_blank">
               <span className="sr-only">{item.name}</span>

@@ -54,7 +54,7 @@ const Index = () => {
           </p>
         </div>
         <div className="flex flex-col items-center justify-center space-y-4 my-8 md:flex-row md:space-x-3 md:space-y-0 ">
-          <Button link="/about" style="light">
+          <Button link="/about" format="light">
             about us
           </Button>
           <Button link="/contact">contact us today</Button>
