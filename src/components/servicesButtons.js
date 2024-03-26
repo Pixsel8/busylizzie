@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { getImage } from "gatsby-plugin-image"
+import { StaticImage, getImage } from "gatsby-plugin-image"
 import ServiceButton from "./serviceButton"
 import { motion } from "framer-motion"
 
@@ -49,7 +49,7 @@ const ServicesButtons = () => {
               scale: 1.05,
               transition: { duration: 0.3 },
             }}
-            className="relative flex justify-center m-5 bg-gray-900 w-64 h-64 md:h-96 md:w-96 rounded-lg group"
+            className="relative flex justify-center m-5 w-64 h-64 md:h-96 md:w-96 rounded-lg group"
           >
             <Link to="/contact" className="w-64 h-64 md:w-96 md:h-96">
               <div className="absolute bottom-0 z-10">
@@ -58,6 +58,11 @@ const ServicesButtons = () => {
                   <h3 className="text-white z-10">Contact us</h3>
                 </div>
               </div>
+              <StaticImage
+                src="../images/about-hero.png"
+                alt="Woman standing next to a car"
+                className="w-64 md:w-96 md:h-96 rounded-lg"
+              />
             </Link>
           </motion.div>
         </div>
