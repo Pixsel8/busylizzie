@@ -9,13 +9,13 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Busy Lizzie Home Care`,
+    title: `Fuller & Roper Chartered Accountants`,
     author: {
       name: `#`,
       summary: `#`,
     },
-    description: `Busy Lizzie provides professional home care services tailored to your needs.`,
-    siteUrl: `https://busylizziecare.co.uk/`,
+    description: `Fuller Roper Accountants Midsomer Norton, Frome & Bath. We provide expert accountancy services in Midsomer Norton, Frome, Bath & surrounding areas.`,
+    siteUrl: `https://fuller-roper.co.uk/`,
     social: {
       twitter: `#`,
     },
@@ -116,7 +116,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Busy Lizzie Home Care Feed",
+            title: "Fuller & Roper Care Feed",
           },
         ],
       },
@@ -124,8 +124,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Busy Lizzie Home Care`,
-        short_name: `Busy Lizzie`,
+        name: `Fuller & Roper`,
+        short_name: `Fuller & Roper`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website

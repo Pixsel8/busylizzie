@@ -15,7 +15,7 @@ const ServicesButtons = () => {
             frontmatter {
               title
               path
-              heroImage {
+              heroImage1 {
                 childImageSharp {
                   gatsbyImageData(layout: FULL_WIDTH)
                 }
@@ -33,8 +33,8 @@ const ServicesButtons = () => {
       <div className="flex justify-center mt-10">
         <div className="flex flex-col flex-wrap lg:flex-row justify-evenly max-w-7xl">
           {data.allMarkdownRemark.edges.map(({ node }) => {
-            const { title, path, heroImage } = node.frontmatter
-            const image = getImage(heroImage.childImageSharp.gatsbyImageData)
+            const { title, path, heroImage1 } = node.frontmatter
+            const image = getImage(heroImage1.childImageSharp.gatsbyImageData)
             return (
               <ServiceButton
                 key={path}

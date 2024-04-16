@@ -1,10 +1,11 @@
 ---
-title: "Companionship"
+title: "Accountancy for your business, from start-up to growth"
 date: "2015-05-01T22:12:03.284Z"
-description: "Companionship Care is a very popular service which helps to combat loneliness and enables you to live a fulfilling life in your own home and community."
-heroImage: "./companionship-hero.png"
+description: "We take a different approach to accountancy for your business. We are owner-managers too and we understand that reliable, knowledgeable service with a personal touch makes running your company far smoother."
+heroImage1: "./business-hero-1.png"
+heroImage2: "./business-hero-2.png"
 category: "services"
-path: "/companionship"
+path: "/business"
 ---
 
 Our companionship services include;

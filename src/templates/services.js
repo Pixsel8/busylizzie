@@ -15,7 +15,12 @@ export const query = graphql`
       frontmatter {
         title
         description
-        heroImage {
+        heroImage1 {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
+          }
+        }
+        heroImage2 {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
           }
@@ -33,7 +38,8 @@ const Services = ({ data }) => {
     <Layout>
       <Hero
         title={frontmatter.title}
-        heroImage={frontmatter.heroImage.childImageSharp.gatsbyImageData}
+        heroImage1={frontmatter.heroImage1.childImageSharp.gatsbyImageData}
+        heroImage2={frontmatter.heroImage2.childImageSharp.gatsbyImageData}
         description={frontmatter.description}
       />
       <div className="bg-white my-20 lg:my-32 xl:mt-0 lg:px-8">
