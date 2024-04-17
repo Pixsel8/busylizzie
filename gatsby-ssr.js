@@ -4,16 +4,10 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/
  */
 
-/**
- * @type {import('gatsby').GatsbySSR['onRenderBody']}
- */
-exports.onRenderBody = ({ setHtmlAttributes }) => {
-  setHtmlAttributes({ lang: `en` })
-}
-
 import React from "react"
 
-export const onRenderBody = ({ setHeadComponents }) => {
+export const onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
+  setHtmlAttributes({ lang: `en` })
   setHeadComponents([
     <script
       key="tidio-script"
