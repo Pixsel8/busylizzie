@@ -1,11 +1,10 @@
 ---
-title: "Personal"
+title: "Home help"
 date: "2015-05-01T22:12:03.284Z"
-description: "Looking after your money can be a daunting and time-consuming task. Our personal tax services can take care of all of this for you, with our undivided attention to detail and a friendly, helpful attitude that sets us apart."
-heroImage1: "./personal-hero-1.png"
-heroImage2: "./personal-hero-2.png"
+description: "Our home help services enable our clients to maintain their independence in a familiar environment while receiving personalized care tailored to their specific needs."
+heroImage: "./home-help.png"
 category: "services"
-path: "/personal"
+path: "/home-help"
 ---
 
 Our home help services encompass a wide range of essential household tasks that enhance the overall well-being of our clients. Our carers can provide assistance with cleaning, ensuring a hygienic and organized living space. Washing and ironing services contribute to maintaining a clean and comfortable wardrobe, while housework and household chores are managed to create a safe and conducive home environment.

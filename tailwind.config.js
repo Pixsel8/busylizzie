@@ -7,19 +7,19 @@ module.exports = {
   ],
   theme: {
     colors: {
-      white: "#FFFFFF",
-      black: "#323031",
+      white: "#FFFBFA",
+      black: "#000",
       transparent: "transparent",
       gray: {
         900: "#6E5C76", // purple
       },
-      red: {
-        700: "#B6121B",
+      pink: {
+        700: "#C1AFC3",
       },
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["EB Garamond", "sans-serif"],
       },
       fontSize: {
         sm: ["20px", "1.3"],
