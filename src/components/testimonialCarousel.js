@@ -15,15 +15,15 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Susan Low",
+    name: "Caroline Wickham Smith",
     testimonial:
-      "I was lucky enough to arrange for Chloe to care for an elderly friend. She was totally empathetic and gained his trust very quickly. Chloe and her team were wonderful, caring, reliable and  kind. They were flexible and looked after every aspect of his care increasing the hours and visits as it became necessary. \n \n  Chloe and her team transformed my friend's life and I am very grateful.",
+      "Chloe is in every respect a delightful person and always succeeds in cheering my wife Vera with her cheeriness and chatter. Always reliable and punctual, she is just exceptional in her approach and ability to assess and transform situations, and Chloe’s care-giving extends well beyond the agreed hours and call of duty. \n \n It’s hard to find capable, conscientious and reliable carers for loved ones who want to remain in their own homes, but need extra help to do so, and I can wholeheartedly recommend Busy Lizzie Homecare for the highest quality care.",
   },
   {
     id: 3,
-    name: "Susan Wow",
+    name: "Richard C Hallworth",
     testimonial:
-      "I was lucky enough to arrange for Chloe to care for an elderly friend. She was totally empathetic and gained his trust very quickly. Chloe and her team were wonderful, caring, reliable and  kind. They were flexible and looked after every aspect of his care increasing the hours and visits as it became necessary. \n \n  Chloe and her team transformed my friend's life and I am very grateful.",
+      "I was lucky enough to arrange for Chloe to care for an elderly friend. She was totally empathetic and gained his trust very quickly. Chloe and her team were wonderful, caring, reliable and  kind. They were flexible and looked after every aspect of his care increasing the hours and visits as it became necessary. \n \n  Chloe is a gem. We have been extremely blessed in having her and could not wish for anyone better. I, with my wife Vera, without hesitation happily recommend Chloe to anyone wanting a first class care-giving person.",
   },
 ]
 
@@ -40,7 +40,7 @@ const TestimonialCarousel = () => {
 
   return (
     <div className="">
-      <div className="px-4 py-4 flex items-center">
+      <div className="px-4 py-4 flex items-center ">
         <div className="hidden md:block">
           <div
             aria-label="Go to previous testimonial"
@@ -53,7 +53,7 @@ const TestimonialCarousel = () => {
             <img src={arrowLeft} className="w-10 h-10" />
           </div>
         </div>
-        <div className="p-8 relative lg:mx-20">
+        <div className="p-8 relative lg:mx-20 md:min-h-[554px] lg:min-h-[448px] ">
           <img src={speechLeft} className="w-12 h-10 absolute top-0 left-0" />
           <motion.div
             key={currentIndex}
