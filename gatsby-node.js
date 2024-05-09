@@ -159,4 +159,36 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+
+  // Get all markdown leagl pages
+
+  const legalTemplate = path.resolve(`./src/templates/legal.js`)
+  const legalResult = await graphql(`
+    query {
+      allMarkdownRemark(
+        filter: { frontmatter: { category: { eq: "legal" } } }
+      ) {
+        nodes {
+          id
+          frontmatter {
+            title
+            path
+          }
+        }
+      }
+    }
+  `)
+
+  const legalPages = legalResult.data.allMarkdownRemark.nodes
+
+  // Create services pages
+  legalPages.forEach(node => {
+    createPage({
+      path: node.frontmatter.path,
+      component: legalTemplate,
+      context: {
+        id: node.id,
+      },
+    })
+  })
 }

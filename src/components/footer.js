@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 import fbLogo from "../images/svg/fb-logo.svg"
 
@@ -43,12 +44,12 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-6 md:flex md:items-center md:justify-between lg:px-8">
         <p className="text-center text-xs leading-5 text-white mt-5">
           {/* &copy; {new Date().getFullYear()} Busy Lizzie. All rights reserved.{" "}*/}
-          <a className="text-white text-xs" href="#">
+          <Link className="text-white text-xs" to="/privacy-policy">
             Privacy Policy |
-          </a>
-          <a className="text-white text-xs" href="#">
+          </Link>
+          <Link className="text-white text-xs" to="/terms-conditions">
             &nbsp; Terms & Conditions
-          </a>
+          </Link>
         </p>
         <div className="space-x-5 text-xs mt-5 text-white"></div>
         <p className="text-center text-xs mt-5 text-white ml-0">

@@ -20,7 +20,7 @@ const ContactForm = () => {
     setServerState({ submitting: true })
     axios({
       method: "post",
-      url: "https://getform.io/f/{unique-endpoint-generated-on-step-1}",
+      url: "https://getform.io/f/zazkpmob",
       data: new FormData(form),
     })
       .then(r => {
