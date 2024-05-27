@@ -2,7 +2,7 @@
 title: "Nutrition"
 date: "2015-05-01T22:12:03.284Z"
 description: "Our nutrition services contribute to overall health and well-being by ensuring that our clients receive balanced and nutritious meals tailored to their specific dietary needs."
-heroImage: "./nutrition.png"
+heroImage: "./nutrition.jpg"
 category: "services"
 path: "/nutrition"
 ---

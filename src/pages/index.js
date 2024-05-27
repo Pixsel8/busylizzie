@@ -62,7 +62,9 @@ const Index = () => {
       </div>
       <ServicesButtons />
       <Testimonial />
+      {/*
       <EventButtons />
+      */}
       <Contact />
     </Layout>
   )

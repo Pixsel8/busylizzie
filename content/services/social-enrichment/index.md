@@ -2,7 +2,7 @@
 title: "Social Enrichment"
 date: "2015-05-01T22:12:03.284Z"
 description: "Our social enrichment services help to reduce feelings of loneliness and isolation and enhance cognitive function, mental well-being, and overall quality of life for our clients. "
-heroImage: "./social-enrichment.png"
+heroImage: "./social-enrichment.jpg"
 category: "services"
 path: "/social-enrichment"
 ---

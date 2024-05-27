@@ -2,7 +2,7 @@
 title: "Home help"
 date: "2015-05-01T22:12:03.284Z"
 description: "Our home help services enable our clients to maintain their independence in a familiar environment while receiving personalized care tailored to their specific needs."
-heroImage: "./home-help.png"
+heroImage: "./home-help.jpg"
 category: "services"
 path: "/home-help"
 ---

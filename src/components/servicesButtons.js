@@ -59,7 +59,7 @@ const ServicesButtons = () => {
                 </div>
               </div>
               <StaticImage
-                src="../images/about-hero.png"
+                src="../images/contact-us.jpg"
                 alt="Woman standing next to a car"
                 className="w-64 md:w-96 md:h-96 rounded-lg"
               />

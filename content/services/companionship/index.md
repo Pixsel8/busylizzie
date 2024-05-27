@@ -2,7 +2,7 @@
 title: "Companionship"
 date: "2015-05-01T22:12:03.284Z"
 description: "Companionship Care is a very popular service which helps to combat loneliness and enables you to live a fulfilling life in your own home and community."
-heroImage: "./companionship-hero.png"
+heroImage: "./companionship.jpg"
 category: "services"
 path: "/companionship"
 ---

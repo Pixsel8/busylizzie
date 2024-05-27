@@ -23,8 +23,7 @@ const Hero = ({ title, heroImage, description }) => {
             <GatsbyImage
               image={image}
               alt={title}
-              imgStyle={{ objectFit: "contain" }}
-              className="aspect-[6/5]  max-w-lg rounded-2xl object-contain w-full"
+              className="aspect-[6/5] max-w-lg rounded-2xl object-contain w-full"
             />
           )}
         </div>

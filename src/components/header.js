@@ -85,9 +85,11 @@ export default function Example() {
           <Link to="/about" className="text-sm leading-6 text-gray-900">
             About
           </Link>
+          {/*}
           <Link to="/blog" className="text-sm  leading-6 text-gray-900">
             Local events
           </Link>
+                */}
           <Link to="/contact" className="text-sm  leading-6 text-gray-900">
             Contact
           </Link>
@@ -163,12 +165,14 @@ export default function Example() {
                 >
                   About
                 </Link>
+                {/*
                 <Link
                   to="/blog"
                   className="-mx-3 block rounded-lg px-3 py-2 text-sm  leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Local events
                 </Link>
+                        */}
                 <Link
                   to="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-sm  leading-7 text-gray-900 hover:bg-gray-50"
