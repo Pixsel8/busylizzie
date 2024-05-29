@@ -11,19 +11,19 @@ const testimonials = [
     id: 1,
     name: "Susan Pow",
     testimonial:
-      "I was lucky enough to arrange for Chloe to care for an elderly friend. She was totally empathetic and gained his trust very quickly. Chloe and her team were wonderful, caring, reliable and  kind. They were flexible and looked after every aspect of his care increasing the hours and visits as it became necessary. \n \n Chloe and her team transformed my friend's life and I am very grateful.",
+      "I was lucky enough to arrange for Chloe to care for an elderly friend. She was totally empathetic and gained his trust very quickly. Chloe and her team were wonderful, caring, reliable and kind. They were flexible and looked after every aspect of his care increasing the hours and visits as it became necessary. \n \n Chloe and her team transformed my friend's life and I am very grateful.",
   },
   {
     id: 2,
     name: "Caroline Wickham Smith",
     testimonial:
-      "Chloe is in every respect a delightful person and always succeeds in cheering my wife Vera with her cheeriness and chatter. Always reliable and punctual, she is just exceptional in her approach and ability to assess and transform situations, and Chloe’s care-giving extends well beyond the agreed hours and call of duty. \n \n It’s hard to find capable, conscientious and reliable carers for loved ones who want to remain in their own homes, but need extra help to do so, and I can wholeheartedly recommend Busy Lizzie Homecare for the highest quality care.",
+      "Chloe and her fantastic team look after my 97-year-old mum and we don’t know what we’d do without them. They provide friendly, efficient, reliable and professional care and I feel that mum couldn’t be in better hands. Nothing is too much trouble and I’m reassured that if I’m not around and there’s a problem, no matter what it is, Chloe and her team will be able to help. \n \n It’s hard to find capable, conscientious and reliable carers for loved ones who want to remain in their own homes, but need extra help to do so, and I can wholeheartedly recommend Busy Lizzie Homecare for the highest quality care.",
   },
   {
     id: 3,
     name: "Richard C Hallworth",
     testimonial:
-      "I was lucky enough to arrange for Chloe to care for an elderly friend. She was totally empathetic and gained his trust very quickly. Chloe and her team were wonderful, caring, reliable and  kind. They were flexible and looked after every aspect of his care increasing the hours and visits as it became necessary. \n \n  Chloe is a gem. We have been extremely blessed in having her and could not wish for anyone better. I, with my wife Vera, without hesitation happily recommend Chloe to anyone wanting a first class care-giving person.",
+      "Chloe is in every respect a delightful person and always succeeds in cheering my wife Vera with her cheeriness and chatter. Always reliable and punctual, she is just exceptional in her approach and ability to assess and transform situations, and Chloe’s care-giving extends well beyond the agreed hours and call of duty. \n \n  Chloe is a gem. We have been extremely blessed in having her and could not wish for anyone better. I, with my wife Vera, without hesitation happily recommend Chloe to anyone wanting a first class care-giving person.",
   },
 ]
 
