@@ -37,7 +37,7 @@ const contact = () => {
                   alt="message icon"
                   className="inline-block mx-4"
                 />
-                <h3 className="inline">info@busylizziecare.co.uk</h3>
+                <h3 className="inline">info@busylizziehomecare.co.uk</h3>
               </div>
               <div className="md:flex md:items-center">
                 <img
