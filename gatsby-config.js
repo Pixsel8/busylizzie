@@ -15,12 +15,13 @@ module.exports = {
       summary: `#`,
     },
     description: `Busy Lizzie provides professional home care services tailored to your needs.`,
-    siteUrl: `https://busylizziecare.co.uk/`,
+    siteUrl: `https://busylizziehomecare.co.uk/`,
     social: {
       twitter: `#`,
     },
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
